@@ -4,6 +4,13 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 
+//config.js should be :
+/*
+module.exports = {
+    secret : 'random string'
+};
+*/
+
 const app = express();
 const router = require('./router');
 
